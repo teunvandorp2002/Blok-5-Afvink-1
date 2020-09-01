@@ -4,9 +4,9 @@ import java.awt.*;
 public class Start {
 
     public static void main(String[] args) {
-        //opdracht1();
-        //opdracht2();
-        //opdracht3();
+        opdracht1();
+        opdracht2();
+        opdracht3();
         bonus();
     }
 
