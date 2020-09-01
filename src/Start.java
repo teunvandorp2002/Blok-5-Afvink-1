@@ -4,9 +4,10 @@ import java.awt.*;
 public class Start {
 
     public static void main(String[] args) {
-        opdracht1();
-        opdracht2();
-        opdracht3();
+        //opdracht1();
+        //opdracht2();
+        //opdracht3();
+        bonus();
     }
 
     public static void opdracht1(){
@@ -35,6 +36,24 @@ public class Start {
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+
+    public static void bonus(){
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        JFrame frame = new JFrame("Mooie GUI");
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
+        ImageIcon img = new ImageIcon("Screenshot from 2020-05-06 16-32-30.png");
+        JLabel label = new JLabel("***HALLO***", SwingConstants.CENTER);
+        frame.add(label);
+        frame.setIconImage(img.getImage());
+        frame.setSize(300, 300);
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setBackground(Color.blue);
+        label.setForeground(Color.red);
         frame.setVisible(true);
     }
 }
