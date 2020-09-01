@@ -11,11 +11,13 @@ public class Start {
     }
 
     public static void opdracht1(){
+        System.out.println("Hello world");
         JOptionPane.showMessageDialog(null, "Hello world");
     }
 
     public static void opdracht2(){
         String name = JOptionPane.showInputDialog(null, "Voer een naam in");
+        System.out.println("Hello" + name);
         JOptionPane.showMessageDialog(null, "Hello " + name);
     }
 
