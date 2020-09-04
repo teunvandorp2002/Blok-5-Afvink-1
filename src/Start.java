@@ -17,12 +17,14 @@ public class Start {
 
     public static void opdracht2(){
         String name = JOptionPane.showInputDialog(null, "Voer een naam in");
-        System.out.println("Hello" + name);
+        System.out.println("Hello " + name);
         JOptionPane.showMessageDialog(null, "Hello " + name);
     }
 
     public static void opdracht3() {
         JFrame frame = new JFrame("Mooie GUI");
+        frame.setSize(300, 300);
+        frame.setResizable(false);
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
         JLabel label = new JLabel("Vul hier onder wat in:", SwingConstants.CENTER);
@@ -34,8 +36,6 @@ public class Start {
         frame.add(panel);
         frame.add(textfield);
         frame.add(label);
-        frame.setSize(300, 300);
-        frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -44,18 +44,18 @@ public class Start {
     public static void bonus(){
         JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Mooie GUI");
+        frame.setSize(300, 300);
+        frame.setResizable(false);
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
         ImageIcon img = new ImageIcon("Screenshot from 2020-05-06 16-32-30.png");
         JLabel label = new JLabel("***HALLO***", SwingConstants.CENTER);
+        label.setForeground(Color.red);
         frame.add(label);
         frame.setIconImage(img.getImage());
-        frame.setSize(300, 300);
-        frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setBackground(Color.blue);
-        label.setForeground(Color.red);
         frame.setVisible(true);
     }
 }
